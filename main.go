@@ -14,6 +14,6 @@ var log = logging.MustGetLogger("Abattoir")
 func main() {
   for {
     seekAndDestroyBadHosts()
-    time.Sleep(360 * time.Second)
+    time.Sleep(time.Duration(Config.RunInterval) * time.Second)
   }
 }
