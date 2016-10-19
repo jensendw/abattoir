@@ -6,4 +6,7 @@ dependencies:
 build:
 	go build
 
+testrun:
+	go run config.go connections.go main.go
+
 all: dependencies build
